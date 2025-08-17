@@ -5,19 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "npm run build && vercel --prod"
   },
   "dependencies": {
+    "@reactflow/background": "^11.3.0",
+    "@reactflow/controls": "^11.2.0",
+    "@reactflow/node-resizer": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "reactflow": "^11.10.1",
-    "@reactflow/node-resizer": "^2.0.0",
-    "@reactflow/controls": "^11.2.0",
-    "@reactflow/background": "^11.3.0"
+    "reactflow": "^11.10.1"
   },
   "browserslist": {
     "production": [
@@ -30,5 +30,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^10.0.0"
   }
 }

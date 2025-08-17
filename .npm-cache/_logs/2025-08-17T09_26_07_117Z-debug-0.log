@@ -1,0 +1,24 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.14.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\hp\BiteSpeed\.npmrc
+5 silly config load:file:C:\Users\hp\.npmrc
+6 silly config load:file:C:\Users\hp\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:C:\Users\hp\BiteSpeed\.npm-cache\_logs\2025-08-17T09_26_07_117Z-
+10 verbose logfile C:\Users\hp\BiteSpeed\.npm-cache\_logs\2025-08-17T09_26_07_117Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly reify moves {}
+15 verbose reify failed optional dependency C:\Users\hp\BiteSpeed\node_modules\fsevents
+16 silly reify mark deleted [ 'C:\\Users\\hp\\BiteSpeed\\node_modules\\fsevents' ]
+17 silly ADD
+18 verbose cwd C:\Users\hp\BiteSpeed
+19 verbose os Windows_NT 10.0.26100
+20 verbose node v22.14.0
+21 verbose npm  v10.9.2
+22 verbose exit 0
+23 info ok
