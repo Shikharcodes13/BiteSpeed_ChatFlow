@@ -6,36 +6,39 @@ const SaveButton = ({ onSave }) => {
     <button
       onClick={onSave}
       style={{
-        padding: '10px 20px',
-        backgroundColor: '#1976d2',
+        padding: '12px 24px',
+        backgroundColor: '#4caf50',
         color: 'white',
         border: 'none',
-        borderRadius: '6px',
+        borderRadius: '8px',
         fontSize: '14px',
         fontWeight: '600',
         cursor: 'pointer',
-        transition: 'all 0.2s ease',
+        transition: 'all 0.3s ease',
         display: 'flex',
         alignItems: 'center',
-        gap: '8px'
+        gap: '8px',
+        boxShadow: '0 2px 8px rgba(76, 175, 80, 0.3)',
+        position: 'relative',
+        overflow: 'hidden'
       }}
       onMouseEnter={(e) => {
-        e.target.style.backgroundColor = '#1565c0';
-        e.target.style.transform = 'translateY(-1px)';
-        e.target.style.boxShadow = '0 4px 12px rgba(25, 118, 210, 0.3)';
+        e.target.style.backgroundColor = '#45a049';
+        e.target.style.transform = 'translateY(-2px)';
+        e.target.style.boxShadow = '0 6px 20px rgba(76, 175, 80, 0.4)';
       }}
       onMouseLeave={(e) => {
-        e.target.style.backgroundColor = '#1976d2';
+        e.target.style.backgroundColor = '#4caf50';
         e.target.style.transform = 'translateY(0)';
-        e.target.style.boxShadow = 'none';
+        e.target.style.boxShadow = '0 2px 8px rgba(76, 175, 80, 0.3)';
       }}
       onMouseDown={(e) => {
         e.target.style.transform = 'translateY(0)';
-        e.target.style.boxShadow = '0 2px 8px rgba(25, 118, 210, 0.3)';
+        e.target.style.boxShadow = '0 2px 8px rgba(76, 175, 80, 0.3)';
       }}
       onMouseUp={(e) => {
-        e.target.style.transform = 'translateY(-1px)';
-        e.target.style.boxShadow = '0 4px 12px rgba(25, 118, 210, 0.3)';
+        e.target.style.transform = 'translateY(-2px)';
+        e.target.style.boxShadow = '0 6px 20px rgba(76, 175, 80, 0.4)';
       }}
     >
       {/* Save Icon */}

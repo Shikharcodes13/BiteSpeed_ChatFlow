@@ -12,7 +12,9 @@ import 'reactflow/dist/style.css';
 import TextNode from './components/TextNode';
 import NodesPanel from './components/NodesPanel';
 import SettingsPanel from './components/SettingsPanel';
-import SaveButton from './components/SaveButton';
+import Header from './components/Header';
+import WelcomeScreen from './components/WelcomeScreen';
+import FlowStats from './components/FlowStats';
 import { validateFlow } from './utils/flowValidation';
 
 // Import node types for React Flow
@@ -118,34 +120,26 @@ function App() {
   return (
     <ReactFlowProvider>
       <div className="app">
-        {/* Header with Save Button */}
-        <div style={{ 
-          padding: '10px 20px', 
-          backgroundColor: 'white', 
-          borderBottom: '1px solid #e0e0e0',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center'
-        }}>
-          <h1 style={{ color: '#333', fontSize: '24px' }}>Chatbot Flow Builder</h1>
-          <SaveButton onSave={handleSave} />
-        </div>
+        {/* Enhanced Header */}
+        <Header onSave={handleSave} nodes={nodes} edges={edges} />
 
         {/* Error Message Display */}
         {errorMessage && (
           <div style={{
-            padding: '10px 20px',
+            padding: '12px 20px',
             backgroundColor: '#ffebee',
             color: '#c62828',
             borderBottom: '1px solid #ffcdd2',
-            textAlign: 'center'
+            textAlign: 'center',
+            fontSize: '14px',
+            fontWeight: '500'
           }}>
             {errorMessage}
           </div>
         )}
 
         {/* Main Content Area */}
-        <div style={{ flex: 1, display: 'flex' }}>
+        <div style={{ flex: 1, display: 'flex', position: 'relative' }}>
           {/* Flow Canvas */}
           <div ref={reactFlowWrapper} style={{ flex: 1, position: 'relative' }}>
             <ReactFlow
@@ -165,10 +159,21 @@ function App() {
               <Controls />
               <Background />
             </ReactFlow>
+
+            {/* Welcome Screen - shown when no nodes exist */}
+            {nodes.length === 0 && <WelcomeScreen />}
+
+            {/* Flow Statistics - shown when nodes exist */}
+            {nodes.length > 0 && <FlowStats nodes={nodes} edges={edges} />}
           </div>
 
           {/* Right Panel - Nodes Panel or Settings Panel */}
-          <div style={{ width: '300px', backgroundColor: 'white', borderLeft: '1px solid #e0e0e0' }}>
+          <div style={{ 
+            width: '300px', 
+            backgroundColor: 'white', 
+            borderLeft: '1px solid #e0e0e0',
+            boxShadow: '-2px 0 8px rgba(0, 0, 0, 0.1)'
+          }}>
             {selectedNode ? (
               <SettingsPanel 
                 node={selectedNode} 
