@@ -1,0 +1,45 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v22.14.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\hp\BiteSpeed\.npmrc
+5 silly config load:file:C:\Users\hp\.npmrc
+6 silly config load:file:C:\Users\hp\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm uninstall cross-env
+8 verbose argv "uninstall" "cross-env"
+9 verbose logfile logs-max:10 dir:C:\Users\hp\BiteSpeed\.npm-cache\_logs\2025-08-17T09_33_06_270Z-
+10 verbose logfile C:\Users\hp\BiteSpeed\.npm-cache\_logs\2025-08-17T09_33_06_270Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly reify mark retired [ 'C:\\Users\\hp\\BiteSpeed\\node_modules\\@epic-web\\invariant' ]
+15 silly reify mark retired [
+15 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\cross-env',
+15 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env',
+15 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env.cmd',
+15 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env.ps1',
+15 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env-shell',
+15 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env-shell.cmd',
+15 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env-shell.ps1'
+15 silly reify ]
+16 silly reify moves {
+16 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\@epic-web\\invariant': 'C:\\Users\\hp\\BiteSpeed\\node_modules\\@epic-web\\.invariant-zXeQ0UiQ',
+16 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\cross-env': 'C:\\Users\\hp\\BiteSpeed\\node_modules\\.cross-env-tYKSAanh',
+16 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env': 'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\.cross-env-XrAX3Iss',
+16 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env.cmd': 'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\.cross-env.cmd-T9QvXMKU',
+16 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env.ps1': 'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\.cross-env.ps1-lVk3YrSy',
+16 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env-shell': 'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\.cross-env-shell-IbOyVUUx',
+16 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env-shell.cmd': 'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\.cross-env-shell.cmd-7sKoIcXK',
+16 silly reify   'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\cross-env-shell.ps1': 'C:\\Users\\hp\\BiteSpeed\\node_modules\\.bin\\.cross-env-shell.ps1-EluupK1Q'
+16 silly reify }
+17 verbose reify failed optional dependency C:\Users\hp\BiteSpeed\node_modules\fsevents
+18 silly reify mark deleted [ 'C:\\Users\\hp\\BiteSpeed\\node_modules\\fsevents' ]
+19 silly ADD
+20 silly REMOVE node_modules/cross-env
+21 silly REMOVE node_modules/@epic-web/invariant
+22 verbose cwd C:\Users\hp\BiteSpeed
+23 verbose os Windows_NT 10.0.26100
+24 verbose node v22.14.0
+25 verbose npm  v10.9.2
+26 verbose exit 0
+27 info ok
